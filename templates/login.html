@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Đăng nhập{% endblock %}
+{% block content %}
+<section class="max-w-md mx-auto bg-white border border-slate-200 rounded-3xl shadow-sm p-8">
+  <div class="mb-6"><p class="text-xs uppercase tracking-widest text-blue-600 font-bold">NEU Smart Campus</p><h1 class="text-2xl font-extrabold text-blue-950 mt-2">Đăng nhập One-Card</h1><p class="text-slate-500 mt-2">Sử dụng mã số sinh viên hoặc giảng viên NEU.</p></div>
+  <form method="post" class="space-y-4">
+    <label class="block text-sm font-semibold">Mã số<input name="username" required maxlength="40" autocomplete="username" class="field mt-1" placeholder="Nhập mã số của bạn"></label>
+    <label class="block text-sm font-semibold">Mật khẩu<input name="password" type="password" required maxlength="128" autocomplete="current-password" class="field mt-1" placeholder="Nhập mật khẩu"></label>
+    <button class="w-full rounded-xl bg-blue-800 text-white py-3 font-bold">Đăng nhập</button>
+  </form>
+</section>
+{% endblock %}

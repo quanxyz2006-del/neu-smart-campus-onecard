@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "description": "Du lieu demo One-Card, khong phai database runtime.",
+  "students": [
+    {
+      "username": "11243396",
+      "full_name": "Phạm Tuấn Anh",
+      "date_of_birth": "30/12/2006",
+      "department": "66A.HTQL",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243893",
+      "full_name": "Đào Hoàng Gia Bảo",
+      "date_of_birth": "06/06/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243402",
+      "full_name": "Tạ Hồng Diệp",
+      "date_of_birth": "18/12/2006",
+      "department": "66A.HTQL",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243906",
+      "full_name": "Lê Thị Diệu",
+      "date_of_birth": "26/04/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243922",
+      "full_name": "Trần Khánh Duy",
+      "date_of_birth": "20/10/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243914",
+      "full_name": "Trần Đình Dũng",
+      "date_of_birth": "27/01/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243411",
+      "full_name": "Khuất Thùy Dương",
+      "date_of_birth": "10/08/2006",
+      "department": "66A.HTQL",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243405",
+      "full_name": "Đinh Anh Đức",
+      "date_of_birth": "20/11/2006",
+      "department": "66A.HTQL",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243759",
+      "full_name": "Nguyễn Ngô Minh Đức",
+      "date_of_birth": "02/02/2006",
+      "department": "66.KHMT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243909",
+      "full_name": "Nguyễn Tuấn Đức",
+      "date_of_birth": "28/12/2003",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11246860",
+      "full_name": "Lê Quang Hà",
+      "date_of_birth": "27/09/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243926",
+      "full_name": "Đặng Nhật Hải",
+      "date_of_birth": "27/03/2006",
+      "department": "66A.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243935",
+      "full_name": "Nguyễn Minh Hiếu",
+      "date_of_birth": "05/01/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243941",
+      "full_name": "Nguyễn Minh Hoàng",
+      "date_of_birth": "04/08/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243948",
+      "full_name": "Đinh Quang Huy",
+      "date_of_birth": "23/06/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243950",
+      "full_name": "Hàn Thị Khánh Huyền",
+      "date_of_birth": "14/01/2006",
+      "department": "66B.CNTT",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243955",
+      "full_name": "Phạm Minh Khiêm",
+      "date_of_birth": "05/04/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243958",
+      "full_name": "Lý Khải Kiên",
+      "date_of_birth": "28/09/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243432",
+      "full_name": "Lương Diệu Linh",
+      "date_of_birth": "09/07/2006",
+      "department": "66A.HTQL",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243969",
+      "full_name": "Nguyễn Thị Khánh Linh",
+      "date_of_birth": "28/11/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243981",
+      "full_name": "Trần Nguyễn Thanh Mai",
+      "date_of_birth": "25/08/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243984",
+      "full_name": "Nguyễn Duy Mạnh",
+      "date_of_birth": "03/01/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243996",
+      "full_name": "Nguyễn Khánh Nam",
+      "date_of_birth": "24/05/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243998",
+      "full_name": "Nguyễn Thị Thúy Nga",
+      "date_of_birth": "18/03/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243790",
+      "full_name": "Đỗ Đức Nghĩa",
+      "date_of_birth": "11/05/2002",
+      "department": "66.KHMT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244003",
+      "full_name": "Nguyễn Nam Quảng Ngọc",
+      "date_of_birth": "05/05/2006",
+      "department": "66A.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244018",
+      "full_name": "Hoàng Minh Quân",
+      "date_of_birth": "14/02/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244020",
+      "full_name": "Sầm Anh Quân",
+      "date_of_birth": "07/01/2006",
+      "department": "66B.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244021",
+      "full_name": "Trần Anh Quân",
+      "date_of_birth": "09/06/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244027",
+      "full_name": "Nguyễn Xuân Sang",
+      "date_of_birth": "23/02/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244030",
+      "full_name": "Đặng Xuân Thành",
+      "date_of_birth": "02/06/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244034",
+      "full_name": "Vũ Tuấn Thịnh",
+      "date_of_birth": "01/02/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11243478",
+      "full_name": "Nguyễn Anh Thơ",
+      "date_of_birth": "17/02/2006",
+      "department": "66A.HTQL",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11244040",
+      "full_name": "Trần Thị Thùy",
+      "date_of_birth": "01/10/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243479",
+      "full_name": "Nguyễn Lý Anh Thư",
+      "date_of_birth": "14/10/2006",
+      "department": "66A.HTQL",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11244038",
+      "full_name": "Phan Anh Thư",
+      "date_of_birth": "19/02/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11243803",
+      "full_name": "Trương Ngọc Tiến",
+      "date_of_birth": "17/10/2006",
+      "department": "66.KHMT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244048",
+      "full_name": "Nguyễn Thùy Trang",
+      "date_of_birth": "16/03/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11244051",
+      "full_name": "Nguyễn Xuân Trường",
+      "date_of_birth": "29/01/2006",
+      "department": "66A.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244052",
+      "full_name": "Đinh Văn Minh Tuấn",
+      "date_of_birth": "11/11/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244019",
+      "full_name": "Nguyễn Thành Công",
+      "date_of_birth": "15/05/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    },
+    {
+      "username": "11244022",
+      "full_name": "Phùng Quang Đăng",
+      "date_of_birth": "20/08/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe đạp"
+    },
+    {
+      "username": "11244023",
+      "full_name": "Phạm Xuân Thành",
+      "date_of_birth": "12/11/2006",
+      "department": "66C.CNTT",
+      "vehicle": "Xe máy"
+    }
+  ],
+  "lecturers": [
+    {
+      "username": "GV001",
+      "full_name": "Phạm Xuân Lâm",
+      "department": "Viện CNTT & KTS",
+      "finance_manager": false
+    },
+    {
+      "username": "GV002",
+      "full_name": "Cao Thu Hương",
+      "department": "Viện CNTT & KTS",
+      "finance_manager": false
+    },
+    {
+      "username": "GV003",
+      "full_name": "Đặng Minh Quân",
+      "department": "Viện CNTT & KTS",
+      "finance_manager": false
+    },
+    {
+      "username": "GV004",
+      "full_name": "Nguyễn Văn Minh",
+      "department": "Viện Kế toán - Kiểm toán",
+      "finance_manager": true
+    },
+    {
+      "username": "GV005",
+      "full_name": "Trần Thị Mai",
+      "department": "Khoa Tài chính - Ngân hàng",
+      "finance_manager": false
+    },
+    {
+      "username": "GV006",
+      "full_name": "Lê Hoàng Nam",
+      "department": "Phòng Quản trị - Thiết bị",
+      "finance_manager": false
+    }
+  ]
+}

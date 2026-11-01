@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token }}">
+  <title>{% block title %}NEU Smart Campus One-Card{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/custom.css') }}">
+</head>
+<body class="bg-slate-50 text-slate-800" data-page-path="{{ request.path }}" data-page-title="{% block page_title %}NEU One-Card{% endblock %}" data-neu-authenticated="{{ 'true' if nav_user else 'false' }}">
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex flex-wrap items-center justify-between gap-4">
+      <a href="/" class="font-extrabold text-blue-900 text-lg">NEU <span class="text-blue-600">One-Card</span></a>
+      <nav class="flex flex-wrap gap-x-4 gap-y-2 items-center text-sm" aria-label="Điều hướng chính">
+        {% if nav_user %}
+          {% if nav_user['role']=='ADMIN' %}
+            <a href="/admin/dashboard" class="nav-item {{ 'nav-item-active' if request.path in ['/admin/dashboard','/admin/finance'] else '' }}" {% if request.path in ['/admin/dashboard','/admin/finance'] %}aria-current="page"{% endif %}>Tổng quan & phê duyệt</a>
+            <a href="/admin/accounts" class="nav-item {{ 'nav-item-active' if request.path == '/admin/accounts' else '' }}" {% if request.path == '/admin/accounts' %}aria-current="page"{% endif %}>Tài khoản</a>
+          {% else %}
+            <a href="/portal/dashboard" class="nav-item {{ 'nav-item-active' if request.path == '/portal/dashboard' else '' }}" {% if request.path == '/portal/dashboard' %}aria-current="page"{% endif %}>Cổng cá nhân</a>
+            <a href="/portal/payments" class="nav-item {{ 'nav-item-active' if request.path == '/portal/payments' else '' }}" {% if request.path == '/portal/payments' %}aria-current="page"{% endif %}>Thanh toán</a>
+            <a href="/portal/parking" class="nav-item {{ 'nav-item-active' if request.path == '/portal/parking' else '' }}" {% if request.path == '/portal/parking' %}aria-current="page"{% endif %}>Gửi xe</a>
+            <a href="/portal/giving" class="nav-item {{ 'nav-item-active' if request.path == '/portal/giving' else '' }}" {% if request.path == '/portal/giving' %}aria-current="page"{% endif %}>Đóng góp</a>
+            {% if nav_user['finance_manager'] %}<a href="/admin/finance" class="nav-item {{ 'nav-item-active' if request.path == '/admin/finance' else '' }}" {% if request.path == '/admin/finance' %}aria-current="page"{% endif %}>Quản lý tài chính</a>{% endif %}
+          {% endif %}
+          <span class="text-slate-400">{{ nav_user['username'] }}</span><a class="text-blue-700 font-semibold" href="/logout">Đăng xuất</a>
+        {% else %}<a href="/login" class="text-blue-700 font-semibold">Đăng nhập</a>{% endif %}
+      </nav>
+    </div>
+  </header>
+  <div class="page-indicator" role="status" aria-label="Vị trí trang hiện tại">
+    <div class="page-indicator-inner"><span class="page-indicator-dot"></span><span>Đang ở:</span><strong>{{ { '/':'Cổng xác minh NEU', '/login':'Đăng nhập', '/portal/dashboard':'Cổng cá nhân', '/portal/payments':'Thanh toán & thẻ tháng', '/portal/parking':'Gửi xe', '/portal/giving':'Đóng góp', '/admin/dashboard':'Tổng quan & phê duyệt', '/admin/finance':'Quản lý tài chính', '/admin/accounts':'Quản lý tài khoản' }.get(request.path, 'One-Card') }}</strong></div>
+    <div class="page-indicator-track"><span style="width: {{ {'/':10,'/login':20,'/portal/dashboard':25,'/portal/payments':50,'/portal/parking':75,'/portal/giving':100,'/admin/dashboard':50,'/admin/finance':50,'/admin/accounts':100}.get(request.path,25) }}%"></span></div>
+  </div>
+  <main class="max-w-7xl mx-auto px-5 py-8">
+    {% with messages=get_flashed_messages(with_categories=true) %}{% if messages %}<div class="space-y-2 mb-6">{% for category,message in messages %}<div class="toast rounded-xl px-4 py-3 {{ 'bg-emerald-50 text-emerald-800' if category=='success' else 'bg-rose-50 text-rose-800' }}">{{ message }}</div>{% endfor %}</div>{% endif %}{% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="text-center text-xs text-slate-400 py-8">NEU Smart Campus One-Card · Bản demo học tập</footer>
+  {% if not request.path.startswith('/api/') %}
+  <aside id="neu-assistant" class="assistant-shell" aria-label="Trợ lý NEU One-Card">
+    <section class="assistant-panel" id="assistant-panel" aria-labelledby="assistant-title" hidden>
+      <header class="assistant-header"><div><h2 id="assistant-title">Trợ lý One-Card</h2></div><button type="button" class="assistant-close" data-assistant-close aria-label="Thu nhỏ trợ lý">−</button></header>
+      <div id="assistant-messages" class="assistant-messages" aria-live="polite"></div>
+      <form id="assistant-form" class="assistant-form"><label class="sr-only" for="assistant-input">Câu hỏi của bạn</label><input id="assistant-input" name="message" maxlength="1200" placeholder="Nhập câu hỏi..." autocomplete="off" required><button type="submit" aria-label="Gửi câu hỏi">Gửi</button></form>
+    </section>
+    <button type="button" id="assistant-toggle" class="assistant-toggle" aria-expanded="false"><span aria-hidden="true">✦</span> Trợ lý One-Card</button>
+  </aside>
+  {% endif %}
+  <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+</body>
+</html>
